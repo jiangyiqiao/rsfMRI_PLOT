@@ -6,6 +6,11 @@ import numpy as np
 # Only use the labels that appear in the data
 cmap=plt.cm.Blues
 
+
+# NC MCI
+labels_name = ['NC', 'MCI']
+cm = np.asarray([[31,6],[3,33]])
+
 # NC EMCI
 
 # labels_name = ['NC', 'EMCI']
@@ -13,9 +18,9 @@ cmap=plt.cm.Blues
 # EMCI LMCI
 # labels_name = ['EMCI', 'LMCI']
 # cm = np.asarray([[75,9],[1,70]])
-# # NC EMCI LMCI
-labels_name = ['NC','EMCI', 'LMCI']
-cm = np.asarray([[73,2,8],[3,79,2],[9,1,61]])
+# # # NC EMCI LMCI
+# labels_name = ['NC','EMCI', 'LMCI']
+# cm = np.asarray([[73,2,8],[3,79,2],[9,1,61]])
 print(type(cm))
 print(cm)
 

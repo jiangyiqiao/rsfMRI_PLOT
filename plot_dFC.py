@@ -1,14 +1,14 @@
 import scipy.io
 import numpy as np
-label_name = 'nc'
-# label_name = 'emci'
+# label_name = 'nc'
+label_name = 'emci'
 # label_name = 'lmci'
 
 
 
 with open('data/brainNet/Edge_AAL90_Weighted_'+label_name+'.edge',"w") as file:
     # 加載mat文件
-    data = scipy.io.loadmat('data/brainNet/NC/kalmancorr/kalmancorr_0.01_0.6.mat')
+    data = scipy.io.loadmat('data/brainNet/EMCI/kalmancorr/kalmancorr_0.01_0.6.mat')
 
 
     # print(data['danao'])
@@ -34,7 +34,7 @@ with open('data/brainNet/Edge_AAL90_Weighted_'+label_name+'.edge',"w") as file:
     bb = bb / sample_num
     for i in range(90):
         for j in range(90):
-
+            #
             if bb[i][j]!=0:
                 bb[i][j] = (bb[i][j]-0.992)*1000
             if bb[i][j]<0 or bb[i][j]>1:
